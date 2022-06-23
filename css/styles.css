@@ -11,6 +11,8 @@
   --footer-color: #2f303a;
   --card-item: 3;
   --card-gap: 30px;
+  --logo-ff: 'Raleway', sans-serif;
+  --main-ff: 'Roboto', sans-serif;
 }
 html {
   box-sizing: border-box;
@@ -217,7 +219,7 @@ img {
 /* Hero */
 
 .hero {
-  margin: auto auto;
+  /* margin: auto auto; */
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
