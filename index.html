@@ -457,29 +457,29 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form action="javascript:void(0);" class="form-public">
-          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <label class="modal-label" for="user-name">
-            <span class="modal-text">Имя*</span></label
+          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="modal__label" for="user-name">
+            <span class="modal__text">Имя*</span></label
           >
-          <div class="modal-wrapper">
+          <div class="modal__wrapper">
             <input
-              class="modal-input"
+              class="modal__input"
               type="text"
               minlength="3"
               required
               name="user-name"
               id="user-name"
             />
-            <svg class="icon" width="18" height="18">
+            <svg class="modal__icon" width="18" height="18">
               <use href="./images/styles.svg#icon-person"></use>
             </svg>
           </div>
-          <label class="modal-label" for="tel">
-            <span class="modal-text">Телефон*</span></label
+          <label class="modal__label" for="tel">
+            <span class="modal__text">Телефон*</span></label
           >
-          <div class="modal-wrapper">
+          <div class="modal__wrapper">
             <input
-              class="modal-input"
+              class="modal__input"
               type="tel"
               name="tel"
               id="tel"
@@ -488,51 +488,53 @@
               required
               title="Номер телефона должен начинаться с +380"
             />
-            <svg class="icon" width="18" height="18">
+            <svg class="modal__icon" width="18" height="18">
               <use href="./images/styles.svg#icon-tel"></use>
             </svg>
           </div>
-          <label class="modal-label" for="email"
-            ><span class="modal-text">Почта*</span></label
+          <label class="modal__label" for="email"
+            ><span class="modal__text">Почта*</span></label
           >
-          <div class="modal-wrapper">
+          <div class="modal__wrapper">
             <input
-              class="modal-input"
+              class="modal__input"
               type="email"
               name="email"
               id="email"
               required
             />
-            <svg class="icon" width="18" height="18">
+            <svg class="modal__icon" width="18" height="18">
               <use href="./images/styles.svg#icon-email"></use>
             </svg>
           </div>
-          <label class="modal-label" for="feedback"
-            ><span class="modal-text">Комментарий</span>
+          <label class="modal__label" for="feedback"
+            ><span class="modal__text">Комментарий</span>
             <textarea
               placeholder="Введите текст"
-              class="modal-input placeholder"
+              class="modal__input placeholder"
               name="feedback"
               id="feedback"
             ></textarea>
           </label>
-          <div class="modal-terms">
-            <label class="personal-data" for="cb">
+          <div class="modal__terms">
+            <label class="modal__personal-data" for="cb">
               <input
                 id="cb"
-                class="cutsom-input visually-hidden"
+                class="modal__cutsom-input visually-hidden"
                 type="checkbox"
                 name="personal-data"
                 value="agreement"
                 required
               />
-              <span class="ticker">
-                <svg width="11" height="8" class="ticker-icon">
+              <span class="modal__ticker">
+                <svg width="11" height="8" class="modal__ticker-icon">
                   <use href="./images/styles.svg#icon-ticker"></use>
                 </svg>
               </span>
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="public-agreement">Условия договора</a></label
+              <a href="" class="modal__public-agreement"
+                >Условия договора</a
+              ></label
             >
           </div>
           <button type="submit" class="button">Отправить</button>
@@ -542,10 +544,10 @@
           name="close_button"
           value="primary"
           type="button"
-          class="close-btn"
+          class="modal__close-btn"
         >
           <svg
-            class="close-icon"
+            class="modal__close-icon"
             width="11"
             height="11"
             aria-hidden="true"
