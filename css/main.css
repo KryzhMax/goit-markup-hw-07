@@ -754,9 +754,7 @@ body {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
-
-.service__link:hover .thumb__overlay,
-.service__link:focus .thumb__overlay {
+.service__link:hover .thumb .thumb__overlay, .service__link:focus .thumb .thumb__overlay {
   transform: translateY(0);
 }
 
@@ -772,9 +770,7 @@ body {
   display: block;
   transition: box-shadow var(--transition);
 }
-
-.service__link:hover,
-.service__link:focus {
+.service__link:hover, .service__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -789,8 +785,7 @@ body {
   border-top: none;
   padding: 20px 24px;
 }
-
-.cardbox__title {
+.cardbox .cardbox__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -798,8 +793,7 @@ body {
   margin-bottom: 4px;
   color: var(--title-color);
 }
-
-.cardbox__text {
+.cardbox .cardbox__text {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
