@@ -2,9 +2,10 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  .section__title {
+  &__title {
     @include fonts(36px, 700, 1.2);
     margin-bottom: 50px;
+    text-align: center;
 
     color: var(--title-color);
   }

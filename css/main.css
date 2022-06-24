@@ -102,12 +102,13 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section .section__title {
+.section__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  text-align: center;
   color: var(--title-color);
 }
 
@@ -519,32 +520,35 @@ body {
 
 .team {
   background-color: var(--background-team-color);
-}
+  /* .team__link .team__icon {
+    fill: var(--icon-color);
+  } */
+  /* .team__link:hover .team__icon,
+  .team__link:focus .icon {
 
-.team__list {
+    fill: var(--main-white);
+  } */
+}
+.team .team__list {
   --card-item: 4;
 }
-
-.team__item {
+.team .team__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.team__text-wrapper {
+.team .team__text-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-.team__socials {
+.team .team__socials {
   width: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-
-.team__socials-item {
+.team .team__socials-item {
   display: flex;
   /* width: 44px;
   height: 44px; */
@@ -552,8 +556,7 @@ body {
   align-items: center; */
   /* border-radius: 50%; */
 }
-
-.team__link {
+.team .team__link {
   display: flex;
   justify-content: center;
   width: 44px;
@@ -564,20 +567,11 @@ body {
   fill: var(--icon-color);
   transition: background-color var(--transition), fill var(--transition);
 }
-.team__link:hover, .team__link:focus {
+.team .team__link:hover, .team .team__link:focus {
   background-color: var(--accent-color);
   fill: var(--main-white);
 }
-
-/* .team__link .team__icon {
-  fill: var(--icon-color);
-} */
-/* .team__link:hover .team__icon,
-.team__link:focus .icon {
-
-  fill: var(--main-white);
-} */
-.team__member {
+.team .team__member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -585,8 +579,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-
-.team__position {
+.team .team__position {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
