@@ -1,9 +1,6 @@
 .logo {
+  @include fonts(26px, 700, 1.2, null);
   font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
 
   &__primary {
     color: var(--accent-color);

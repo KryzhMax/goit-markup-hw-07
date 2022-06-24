@@ -15,11 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="nav">
           <a class="logo logo__primary" href="./index.html" lang="en"
             >Web<span class="logo logo__secondary--dark">Studio</span></a
@@ -38,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts card-set">
+        <ul class="contacts header__contacts card-set">
           <li class="contacts__item">
             <a class="contacts__info" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
@@ -58,70 +59,70 @@
         </ul>
       </div>
     </header>
-    <main class="portfolio">
+    <main>
       <!-- Hero -->
       <section class="section">
         <div class="container">
           <!-- <h1>Portfolio</h1> -->
-          <ul class="filter list">
-            <li class="filter-point">
-              <button type="button" class="filter-item current">Все</button>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button type="button" class="filter__btn current">Все</button>
             </li>
-            <li class="filter-point">
-              <button type="button" class="filter-item">Веб-сайты</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Веб-сайты</button>
             </li>
-            <li class="filter-point">
-              <button type="button" class="filter-item">Приложения</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Приложения</button>
             </li>
-            <li class="filter-point">
-              <button type="button" class="filter-item">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Дизайн</button>
             </li>
-            <li class="filter-point">
-              <button type="button" class="filter-item">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Маркетинг</button>
             </li>
           </ul>
-          <ul class="service-list card-set list">
-            <li class="service-item card-set-item">
+          <ul class="service__list card-set list">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio.jpg"
                     alt="рисунок ноутбука"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов.
                     </p>
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Технокряк</h2>
-                  <p class="text-all">Веб-сайт</p>
+                  <h2 class="cardbox__title">Технокряк</h2>
+                  <p class="cardbox__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio1.jpg"
                     alt="постер двух баскетболистов"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -130,26 +131,28 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="text-all">Дизайн</p>
+                  <h2 class="cardbox__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="cardbox__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio2.jpg"
                     alt="вывеска рыбного ресторана"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -158,26 +161,26 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Ресторан Seafood</h2>
-                  <p class="text-all">Приложение</p>
+                  <h2 class="cardbox__title">Ресторан Seafood</h2>
+                  <p class="cardbox__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio3.jpg"
                     alt="черные наушники"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -186,26 +189,26 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Проект Prime</h2>
-                  <p class="text-all">Маркетинг</p>
+                  <h2 class="cardbox__title">Проект Prime</h2>
+                  <p class="cardbox__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio4.jpg"
                     alt="проект боксов"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -214,26 +217,26 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Проект Boxes</h2>
-                  <p class="text-all">Приложение</p>
+                  <h2 class="cardbox__title">Проект Boxes</h2>
+                  <p class="cardbox__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio5.jpg"
                     alt="моноблок"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -242,26 +245,26 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Inspiration has no Borders</h2>
-                  <p class="text-all">Веб-сайт</p>
+                  <h2 class="cardbox__title">Inspiration has no Borders</h2>
+                  <p class="cardbox__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio6.jpg"
                     alt="издание лимитед идишен"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -270,26 +273,26 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Издание Limited Edition</h2>
-                  <p class="text-all">Дизайн</p>
+                  <h2 class="cardbox__title">Издание Limited Edition</h2>
+                  <p class="cardbox__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio7.jpg"
                     alt="проект лаб"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -298,26 +301,26 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Проект LAB</h2>
-                  <p class="text-all">Маркетинг</p>
+                  <h2 class="cardbox__title">Проект LAB</h2>
+                  <p class="cardbox__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="service-item card-set-item">
+            <li class="service__item card-set-item">
               <a
-                class="link service-link"
+                class="link service__link"
                 target="_blank"
                 href="https://google.com"
               >
-                <div class="thumb-overlay">
+                <div class="thumb">
                   <img
-                    class="card-img"
+                    class="thumb__img"
                     src="./images/portfolio8.jpg"
                     alt="развитие бизнеса"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="thumb__overlay">
+                    <p class="thumb__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -326,8 +329,8 @@
                   </div>
                 </div>
                 <div class="cardbox">
-                  <h2 class="all-title">Growing Business</h2>
-                  <p class="text-all">Приложение</p>
+                  <h2 class="cardbox__title">Growing Business</h2>
+                  <p class="cardbox__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -336,7 +339,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="footer-item">
           <a class="logo logo__primary" href="./index.html" lang="en"
             >Web<span class="logo logo__secondary--white">Studio</span></a
